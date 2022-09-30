@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../servicios/api.service'
 
 @Component({
   selector: 'app-consultar',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConsultarComponent implements OnInit {
 
-  constructor() { }
+  id: any 
+  listaPokemon: Array<any> = []
+
+  constructor(
+    private servicios: ApiService
+  ) { }
 
   ngOnInit(): void {
+    this.getPokemon()
+  }
+
+  getPokemon(){
+    this.servicios.getPokemon().subscribe((respuesta =>{
+      this.listaPokemon = respuesta
+      console.log(this.listaPokemon);
+      
+    }))
   }
 
 }
