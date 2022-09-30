@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
 import { ApiService } from '../servicios/api.service'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-consultar',
@@ -12,7 +14,8 @@ export class ConsultarComponent implements OnInit {
   listaPokemon: Array<any> = []
 
   constructor(
-    private servicios: ApiService
+    private servicios: ApiService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -22,9 +25,12 @@ export class ConsultarComponent implements OnInit {
   getPokemon(){
     this.servicios.getPokemon().subscribe((respuesta =>{
       this.listaPokemon = respuesta
-      console.log(this.listaPokemon);
-      
     }))
+  }
+
+  redireccionar(id:any){
+    let ruta = 'pokemon/'+id;
+    this.router.navigate([ruta]);
   }
 
 }

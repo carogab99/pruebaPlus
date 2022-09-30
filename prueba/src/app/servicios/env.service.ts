@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class EnvService {
 
   API_URL  = 'https://bp-pokemons.herokuapp.com/?idAuthor=2'
+  API_URL2 = 'https://bp-pokemons.herokuapp.com/'
 
   constructor() { }
 }

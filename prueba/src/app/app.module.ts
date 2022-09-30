@@ -6,11 +6,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ConsultarComponent } from './consultar/consultar.component';
+import { DialogComponent } from './dialog/dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ConsultarComponent
+    ConsultarComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,

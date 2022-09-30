@@ -1,7 +1,7 @@
 <h1>POKEMON APP</h1>
 <br>
 <div>
-    <table>
+    <table class="content-table">
         <thead>
             <tr>
                 <th>Nombre</th>
@@ -20,7 +20,7 @@
                 <td>{{item.attack}}</td>
                 <td>{{item.defense}}</td>
                 <td>
-                    <button>
+                    <button (click)="redireccionar(item.id)">
                         editar
                     </button>
                     <button>

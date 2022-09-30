@@ -16,4 +16,8 @@ export class ApiService {
   getPokemon(): Observable <any>{
     return this.apiRest.get(this.envService.API_URL)
   }
+
+  getPokemonById(id: any): Observable <any>{
+    return this.apiRest.get(this.envService.API_URL2+`${id}`)
+  }
 }
