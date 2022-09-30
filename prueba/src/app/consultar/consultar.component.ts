@@ -12,6 +12,7 @@ export class ConsultarComponent implements OnInit {
 
   id: any 
   listaPokemon: Array<any> = []
+  buscarPokemon: string =''
 
   constructor(
     private servicios: ApiService,

@@ -7,4 +7,24 @@
     font-family: sans-serif;
     min-width: 450px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid #000;
+}
+
+table {
+    width: 50%;
+}
+
+th,
+td {
+    width: 25%;
+    text-align: left;
+    border: 1px solid #000;
+}
+th{
+    font-weight: bold
+}
+
+button{
+    background-color: #e7e7e7; color: black;
+    border-radius: 12px;
 }
