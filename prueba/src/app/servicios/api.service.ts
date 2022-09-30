@@ -20,4 +20,12 @@ export class ApiService {
   getPokemonById(id: any): Observable <any>{
     return this.apiRest.get(this.envService.API_URL2+`${id}`)
   }
+
+  deletePokemonById(id: any): Observable <any>{
+    return this.apiRest.delete(this.envService.API_URL2+`${id}`)
+  }
+
+  putPokemon(id:any, name: any, image: any, attack: any, defense: any):Observable <any>{
+    return this.apiRest.put(this.envService.API_URL2+`${id}`, {name,image, attack, defense})
+  }
 }

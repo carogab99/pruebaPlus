@@ -33,4 +33,9 @@ export class ConsultarComponent implements OnInit {
     this.router.navigate([ruta]);
   }
 
+  deletePokemon(id:any){
+    this.servicios.deletePokemonById(id).subscribe((respuesta => {
+      this.getPokemon()
+    }))
+  }
 }

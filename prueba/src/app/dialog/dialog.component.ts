@@ -34,4 +34,10 @@ export class DialogComponent implements OnInit {
       this.defense = respuesta.defense
     })
   }
+
+  updatePokemon(){
+    this.servicios.putPokemon(this.id, this.name, this.image, this.attack, this.defense).subscribe(respuesta =>{
+
+    })
+  }
 }

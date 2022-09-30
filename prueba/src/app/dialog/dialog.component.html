@@ -14,7 +14,8 @@
         <label>Defensa: </label>
         <input [(ngModel)]="defense" [ngModelOptions]="{standalone: true}">
     </form>
-    <button routerLink="">
-        Regresar
+
+    <button routerLink="" (click)="updatePokemon()">
+        Actualizar
     </button>
 </div>
