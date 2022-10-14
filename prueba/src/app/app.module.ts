@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ConsultarComponent } from './consultar/consultar.component';
 import { DialogComponent } from './dialog/dialog.component';
+import { FiltroPipe } from './pipe/filtro.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ConsultarComponent,
-    DialogComponent
+    DialogComponent,
+    FiltroPipe
   ],
   imports: [
     BrowserModule,

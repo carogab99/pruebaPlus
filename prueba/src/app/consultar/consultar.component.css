@@ -8,9 +8,6 @@
     min-width: 450px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     border: 1px solid #000;
-}
-
-table {
     width: 50%;
 }
 
@@ -19,12 +16,40 @@ td {
     width: 25%;
     text-align: left;
     border: 1px solid #000;
+    align-items: center;
+    justify-content: center;
 }
+
 th{
     font-weight: bold
 }
 
-button{
+.b1{
     background-color: #e7e7e7; color: black;
     border-radius: 12px;
+}
+
+.acciones{
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+}
+
+.boton2{
+    background-color: #008CBA;
+    color: white;
+    border-radius: 8px;
+}
+
+.general{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Listado{
+    display: flex;
+    justify-content: center;
 }
